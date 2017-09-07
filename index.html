@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neosis.tech Project </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+
+</head>
+<body ng-app="app">
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title"><a ui-sref="/">your logo here</a></p>
+        </div>
+        <div class="float-right">
+            <section id="login"></section>
+
+        </div>
+
+
+        <div class="page-container">
+            <!--/content-inner-->
+            <div class="left-content" style="width: 100%">
+                <div class="inner-content">
+                    <!-- header-starts -->
+                    <div class="header-section">
+                        <!-- top_bg -->
+                        <div class="top_bg" ng-if="isMenuShow">
+
+                            <div class="header_top">
+                                <div class="top_right">
+                                    <ul>
+                                        <li><a ui-sref="/">Question 1</a></li>
+                                        |
+                <li><a ui-sref="q2">Question 2</a></li>
+                                        |
+                <li><a ui-sref="q3">Question 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="top_left">
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                        </div>
+                        <div class="clearfix"></div>
+                        <!-- /top_bg -->
+                    </div>
+
+                    <!-- //header-ends -->
+                    <!--content-->
+                    <div class="content">
+                        <div class="women_main" ui-view>
+                            <!-- start content -->
+
+
+
+
+
+                        </div>
+                    </div>
+                    <!--content-->
+                </div>
+            </div>
+            <!--//content-inner-->
+
+
+        </div>
+    </div>
+    <script src="script/angular.min.js"></script>
+    <script src="script/angular-ui-router.min.js"></script>
+    <script src="app/App.module.js"></script>
+    <script src="app/App.config.js"></script>
+    <script src="app/question1controller.js"></script>
+
+</body>
+
+</html>
